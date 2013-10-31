@@ -6,4 +6,31 @@
 -- 
 -- --------------------------------------------------------
 
+--
+-- Estructura de tabla para la tabla `bolsa`
+-- Sergio Martín Tárraga
+--
 
+CREATE TABLE IF NOT EXISTS `bolsa` (
+  `id` int(6) NOT NULL AUTO_INCREMENT,
+  `id_documento1` int(6) DEFAULT NULL,
+  `id_documento2` int(6) DEFAULT NULL,
+  `fecha` date DEFAULT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB  DEFAULT CHARSET=utf8_unicode_ci AUTO_INCREMENT=11 ;
+
+--
+-- Volcado de datos para la tabla `bolsa`
+--
+
+INSERT INTO `bolsa` (`id`, `id_documento1`, `id_documento2`, `fecha`) VALUES
+(1, 6, 1, '2013-10-31'),
+(2, 5, 2, '2013-10-30'),
+(3, 5, 3, '2013-10-29'),
+(4, 1, 4, '2013-10-28'),
+(5, 6, 5, '2013-10-27'),
+(6, 5, 6, '2013-10-26'),
+(7, 4, 7, '2013-10-25'),
+(8, 3, 8, '2013-10-24'),
+(9, 2, 9, '2013-10-23'),
+(10, 1, 10, '2013-10-22');
